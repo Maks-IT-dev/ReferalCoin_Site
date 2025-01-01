@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виведення коштів</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Вивести кошти</h1>
+
+    <form id="withdrawalForm">
+        <label for="nickname">Нікнейм</label>
+        <input type="text" id="nickname" required>
+
+        <label for="phone">Телефон</label>
+        <input type="text" id="phone" required>
+
+        <label for="amount">Сума</label>
+        <input type="number" id="amount" required>
+
+        <label for="cardNumber">Номер картки</label>
+        <input type="text" id="cardNumber" required>
+
+        <button type="submit">Надіслати</button>
+    </form>
+
+    <div id="responseMessage" class="hidden">
+        <div class="message-content">
+            <h2>Транзакція оброблена</h2>
+            <p>Нікнейм: <span id="responseNickname"></span></p>
+            <p>Сума: <span id="responseAmount"></span></p>
+            <p>Телефон: <span id="responsePhone"></span></p>
+            <p>Номер картки: <span id="responseCardNumber"></span></p>
+            <button id="closeMessage">Закрити</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
